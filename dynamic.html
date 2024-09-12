@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <title>JS Data Types</title>
+</head>
+<body>
+   
+    <p id="demo"></p>
+
+    <script>
+        const data = ['budi', 'hendri', 2, 1];
+        const data2 = null
+        document.getElementById("demo").innerHTML = 
+            typeof ' ' + "<br>" +                   // string kosong
+            typeof 'jhon' + "<br>" +                // string
+            typeof 34 + "<br>" +                    // number
+            typeof {'nama' : 'hendri', 'umur' : 34} + "<br>" +  // object
+            (Array.isArray(data) ? 'array' : typeof data) + "<br>" +  // array
+            (typeof data2 === 'object' && data2 === null ? 'null' : typeof data2); // null
+    </script>
+</body>
+</html>
