@@ -12,5 +12,7 @@ const mahasiswa = [
 
 mahasiswa.push('dewi','sandra');
 
-console.log('mutable with object :' + JSON.stringify(siswa));
+//console.log('mutable with object :' + JSON.stringify(siswa));
+//console.log(siswa);
+console.log('mutable with object :' + siswa);
 console.log('mutable with array :' + mahasiswa);
