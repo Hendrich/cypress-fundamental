@@ -6,13 +6,13 @@ const createEsbuildPlugin =
   require("@badeball/cypress-cucumber-preprocessor/esbuild").createEsbuildPlugin;
 
 module.exports = defineConfig({
-  component: {
-    devServer: {
-      framework: "react", // Sesuaikan framework yang digunakan
-      bundler: "webpack",
-      webpackConfig: require("./webpack.config.js"), // Sesuaikan dengan konfigurasi Webpack
-    },
-  },
+  // component: {
+  //   devServer: {
+  //     framework: "react", // Sesuaikan framework yang digunakan
+  //     bundler: "webpack",
+  //     webpackConfig: require("./webpack.config.js"), // Sesuaikan dengan konfigurasi Webpack
+  //   },
+  // },
 
   e2e: {
     async setupNodeEvents(on, config) {
@@ -38,7 +38,7 @@ module.exports = defineConfig({
       return config;
     },
     // Mengatur specPattern agar mendukung file .feature dan file non-Cucumber
-    specPattern: ["cypress/e2e/**/*.feature", "cypress/e2e/**/*.{cy.js,cy.ts}"],
+    specPattern: ["cypress/e2e/**/*.feature"],
     supportFile: "cypress/support/e2e.js",
     stepDefinitions: "cypress/support/step_definitions/**/*.js",
   },

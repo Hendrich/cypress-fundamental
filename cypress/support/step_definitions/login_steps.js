@@ -1,6 +1,6 @@
 import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
 
-Given("I open login page", () => {
+Given("saya mau buka website", () => {
   cy.visit("http://zero.webappsecurity.com/login.html"); // Sesuaikan dengan URL halaman login Anda
 });
 
