@@ -3,6 +3,6 @@ Feature: Login to Application
          I want to login into Application
 
 Scenario: Valid login
-Given saya mau buka website
+Given I open the website
 When I submit login
 Then I should see homepage
