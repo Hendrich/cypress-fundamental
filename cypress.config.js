@@ -38,8 +38,8 @@ module.exports = defineConfig({
       return config;
     },
     // Mengatur specPattern agar mendukung file .feature dan file non-Cucumber
-    specPattern: ["cypress/e2e/**/*.feature"],
-    supportFile: "cypress/support/e2e.js",
-    stepDefinitions: "cypress/support/step_definitions/**/*.js",
+    //specPattern: ["cypress/e2e/**/*.feature"],
+    //supportFile: "cypress/support/e2e.js",
+    //stepDefinitions: "cypress/support/step_definitions/**/*.js",
   },
 });
